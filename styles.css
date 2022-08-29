@@ -1,0 +1,414 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: sources system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 20px;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+}
+
+/* Common Classes Start */
+
+.info {
+  padding: 0 10vw;
+  text-align: center;
+  font-size: 1rem;
+  margin: 10vh 0;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.heading {
+  font-weight: 200;
+  text-align: center;
+}
+
+.text-left {
+  text-align: center;
+}
+
+.text-right {
+  text-align: center;
+}
+
+.link {
+  text-decoration: none;
+  font-weight: bold;
+  color: #666;
+}
+
+.link:hover {
+  color: #229bd7;
+}
+
+.list__item {
+  list-style-type: none;
+  display: inline;
+  margin: 0 5px;
+  font-size: 1rem;
+  color: #666;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+.card__overlay {
+  font-size: 2rem;
+  color: #fff;
+  text-transform: capitalize;
+  position: absolute;
+  align-self: center;
+  text-align: center;
+  top: 40%;
+  font-weight: 400;
+
+  letter-spacing: 5px;
+  text-indent: 10px;
+}
+.card__image {
+  width: 100%;
+}
+.card__info {
+  text-align: left;
+}
+.card__info__heading {
+  font-weight: 500;
+}
+.card__info__detail {
+  font-size: 1rem;
+  text-overflow: ellipsis;
+}
+.card__info__sub {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 5px;
+}
+
+.card__controls {
+  text-align: left;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: #e4e4e4;
+  border-radius: 5px;
+}
+
+/* Common Classes End */
+
+/* Header Classess Start*/
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 2vh 1vw;
+}
+/* Header Left Side Classess*/
+
+.header__left {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.logo {
+  width: 200px;
+  align-self: center;
+}
+
+/* Header Left Side Classess End*/
+
+/* Header Right Side Classess Start*/
+
+/* Header Right Side Classess End*/
+/* Header Class End*/
+
+/* Main Classes Start*/
+/* Main Carousel Classes Start */
+.carousel {
+  background-image: url("assets/images/carousel_images/carousel_image_1.jpg");
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel__item {
+  text-align: center;
+  color: #fff;
+  width: 50vw;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+
+.carousel__item__content {
+}
+
+.carousel__item__content__heading {
+  font-weight: 600;
+}
+
+.carousel__item__controls {
+}
+
+.button--blue {
+  color: #fff;
+  background-color: #229bd7;
+  font-size: 1rem;
+  padding: 1rem 3rem;
+  cursor: pointer;
+  transition: background-color 2s ease-out;
+  outline: none;
+  border: none;
+}
+.carousel__item__controls__btn:hover {
+  background-color: #13a4ed;
+}
+/* Main Carousel Class End*/
+
+/* Main Videos Class Start*/
+
+.videos {
+  display: grid;
+  grid-template-rows: 0.2fr 1fr 0.2fr;
+  text-align: center;
+  row-gap: 80px;
+  padding: 0 10vw;
+}
+
+.videos__content {
+  display: grid;
+  column-gap: 10%;
+  row-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+/* Main Videos Class End*/
+
+/*  Features Class Start*/
+
+.features {
+  display: grid;
+  grid-template-rows: 0.2fr 1fr;
+  text-align: center;
+  padding: 0 10vw;
+}
+.features__content {
+  display: grid;
+  column-gap: 10%;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+/*  Features Class End*/
+
+/* Benefits Start */
+.benefits {
+  padding: 0 25vw;
+}
+.benefits__list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
+}
+.benefits-item {
+  display: flex;
+  column-gap: 14%;
+  justify-content: left;
+}
+
+.benefits-item__icon {
+  width: 13%;
+  height: 13%;
+  align-self: center;
+}
+
+.benefits-item__info {
+}
+
+.benefits-item__info__heading {
+  font-weight: 500;
+  line-height: 50%;
+  font-size: 1.5rem;
+}
+/* Benefits End */
+
+/* Collection Start */
+
+.collection {
+  display: grid;
+  padding: 0 10vw;
+  row-gap: 40px;
+}
+.collection-cards {
+  display: grid;
+  column-gap: 10%;
+  row-gap: 10%;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+/* Collection End */
+
+/* ClipMine Users Start */
+
+.partners {
+  display: grid;
+  padding: 0 10vw;
+  background-color: #f6f6f6;
+}
+.partners-cards {
+  padding: 5vh 0;
+  display: grid;
+  column-gap: 20%;
+  row-gap: 10vh;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+/* ClipMine Users End */
+
+/* Tagging Start */
+
+.tagging {
+  padding: 15vh 0;
+}
+
+.tagging__controls {
+  display: flex;
+  justify-content: center;
+  font-size: 1rem;
+}
+
+.tagging__controls__input {
+  text-overflow: ellipsis;
+  width: 30vw;
+}
+
+.tagging__controls__button {
+  font-weight: 500;
+  letter-spacing: 1px;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  padding: 1rem 2rem;
+  color: #fff;
+  background-color: #229bd7;
+}
+
+/* Tagging End */
+
+/* Platforms Start */
+
+.platforms {
+  background-color: #f6f6f6;
+  padding: 15vh 10vw;
+}
+
+.platforms__items {
+  display: grid;
+  padding: 5vh 0;
+  column-gap: 10%;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+}
+
+/* Platforms End */
+
+/* Main Class End*/
+
+/* Footer Class Start */
+
+/* Upper Footer Class Start */
+.footer__links {
+  display: flex;
+  justify-content: center;
+  background-color: #1d2327;
+  padding: 4px 0;
+}
+
+.footer__links__item::after {
+  content: " | ";
+  color: #666;
+}
+
+.footer__links__item {
+  display: inline;
+  margin: 0 2px;
+  font-size: 0.9rem;
+  text-decoration: none;
+  color: #229bd7;
+}
+
+.footer__link:hover {
+  font-weight: bold;
+}
+/* Upper Footer Class End */
+/* Lower Footer Class Start */
+.footer__info {
+  display: flex;
+  column-gap: 10px;
+  justify-content: center;
+  background-color: #000;
+  color: #666;
+  font-size: 1rem;
+  padding: 4px 0;
+}
+
+/* Lower Footer Class End */
+/* Footer Class End */
+
+/* Media Queries */
+
+@media (max-width: 600px) {
+  html {
+    font-size: 15px;
+  }
+  header {
+    flex-direction: column;
+    padding: 0 1vw;
+  }
+  .header__right__list {
+    display: flex;
+    justify-content: space-around;
+  }
+  .tagging__controls {
+    display: flex;
+    justify-content: center;
+    font-size: 1rem;
+    white-space: nowrap;
+  }
+  .tagging__controls__input {
+    text-overflow: ellipsis;
+    width: 50vw;
+  }
+
+  .benefits-item {
+    display: flex;
+    flex-direction: column;
+    column-gap: 14%;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .benefits-item__icon {
+    width: 40%;
+    height: 40%;
+    align-self: center;
+  }
+
+  .benefits-item__info {
+  }
+
+  .benefits-item__info__heading {
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 20px;
+  }
+}
